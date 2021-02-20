@@ -1,0 +1,58 @@
+@charset "EUC-KR";
+@font-face {
+      src : url("../font/KOPUBDOTUMLIGHT.TTF");
+      font-family: "KoPubWorldµ¸¿òÃ¼ Medium"
+}
+
+.tab1 {
+	table-layout: fixed;
+	width: 900px;
+	height: 150px;
+	padding: 3%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+.tab1 tr {
+	width: 900px;
+	border: 2px solid #808080;
+	cursor: pointer;
+}
+
+.tab1 tr:hover {
+	width: 900px;
+	border: 2px solid #808080;
+	padding: 3%;
+	background-color: #F0F0F0;
+	color: #000000;
+}
+
+.tab2 {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.tab2 a {
+	font-size: 17px;
+	margin: 10px;
+	color: #717171;
+}
+
+.tab2 a:hover {
+	color: #2f2f2f;
+	font-weight: bold;
+}
+
+.info {
+	border: 1px solid gray;
+	width: 800px;
+	padding: 10px;
+	padding-left: 20px;
+	font: KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 18px;
+	
+}
+
+#bookimg {
+	width: 80px;
+}
