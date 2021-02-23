@@ -35,8 +35,8 @@ public class BookDao {
 		PreparedStatement pstmt = null;
 		ResultSet set = null; // select문 결과를 저장하는 객체
 
-		String query = "select * from (SELECT * FROM ( SELECT rownum rnum, bookNum, bookName, writer, publish, year, code, bCnt, cnt, bookimg FROM b_book order by bookNum desc) b_book where rnum <= ?) where rnum >= ?";
-
+		String query = "select * from (SELECT * FROM ( SELECT rownum rnum, bookNum, bookName, writer, publish, year, code, bCnt, cnt, bookimg FROM (select * from b_book order by bookNum desc) b_book) b_book where rnum <= ?) where rnum >= ?";
+		
 		try {
 			connection = dataSource.getConnection();
 

@@ -102,7 +102,7 @@ public class BookController {
 
 		MultipartFile mf = mtfRequest.getFile("file");
 
-		String path = "C:\\Users\\LEE\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CenLibrary\\resources\\bookimg/"; // 절대경로
+		String path = "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps\\cenlibrary\\resources\\bookimg/"; // 절대경로
 		String originFileName = mf.getOriginalFilename(); // 원본 파일명
 		String safeFile = path + originFileName; // 저장형식
 
@@ -163,7 +163,7 @@ public class BookController {
 		
 		MultipartFile mf = mtfRequest.getFile("bookimg2");
 
-		String path = "C:\\Users\\LEE\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CenLibrary\\resources\\bookimg/"; // 절대경로
+		String path = "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps\\cenlibrary\\resources\\bookimg/"; // 절대경로
 		String originFileName = mf.getOriginalFilename(); // 원본 파일명
 		String safeFile = path + originFileName; // 저장형식
 

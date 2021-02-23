@@ -9,6 +9,25 @@
 <link rel="stylesheet" href="/cenlibrary/resources/css/bookview.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/star.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+function reviewChk() {
+	var ratingChk = $("input:radio[name='rating']").is(":checked");
+	
+	if(ratingChk == false) {
+		alert("평점을 선택해주세요.");
+		return false;
+	}
+	
+	if 	(document.reviewForm.rContent.value.length == 0) {
+		alert("내용을 입력해주세요.");
+		reg_frm.birth.focus();
+		return false;
+	}
+	
+	document.reviewForm.submit();
+}
+</script>
 </head>
 <body>
 
@@ -87,7 +106,7 @@
 		<hr>
 
 		<!-- 리뷰남기는 폼 -->
-		<form action="reviewWrite.do" method="post">
+		<form action="reviewWrite.do" method="post" name="reviewForm">
 			<input type="hidden" name="bookNum" value="${view.bookNum}">
 			<table>
 
@@ -114,7 +133,7 @@
 				</tr>
 
 				<tr>
-					<td colspan="2"><input type="submit" value="등록" id="writebtn" /></td>
+					<td colspan="2"><input type="button" value="등록" id="writebtn" onclick="reviewChk()"/></td>
 				</tr>
 
 			</table>

@@ -83,7 +83,7 @@
 									<c:forEach items="${course}" var="dto" varStatus="status">
 										<c:if test="${dto.day + 1 == day}">
 
-											<a href="#">¤ý${dto.lecName}</a>
+											<a>¤ý${dto.lecName}</a>
 											<br>
 
 										</c:if>
