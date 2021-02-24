@@ -57,7 +57,7 @@ td {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 30px;
-	left: 60.56%;
+	left: 1154px;
 }
 
 #deletebtn:hover {
@@ -78,7 +78,7 @@ td {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 15px;
-	left: 66.8%;
+	left: 1272px;
 }
 
 #deletebtn1:hover {
@@ -99,7 +99,7 @@ td {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 30px;
-	left: 66.8%;
+	left: 1272px;
 }
 
 #modifybtn:hover {
@@ -120,7 +120,7 @@ td {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 15px;
-	left: 73%;
+	left: 1390px;
 }
 
 #modifybtn1:hover {
@@ -141,7 +141,7 @@ td {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 30px;
-	left: 73%;
+	left: 1390px;
 }
 
 #cancelbtn:hover {
@@ -162,7 +162,7 @@ td {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 30px;
-	left: 21%;
+	left: 400px;
 }
 
 #replybtn:hover {
@@ -172,7 +172,8 @@ td {
 
 span {
 	position: absolute;
-	left: 71%;
+	left: 1350px;
+	width: 500px;
 	font-weight: normal;
 	font-size: 17px;
 }

@@ -65,14 +65,16 @@ input[type=button]:hover {
 	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
 	position: absolute;
 	margin: 10px;
-	left: 77.3%;
+	left: 1465px;
 	position: absolute;
 	border-radius: 0px;
 }
 
 span {
-	top: 35%;
-	left: 67.5%;
+	width: 500px;
+	top: 330px;
+	left: 1258px;
 	position: absolute;
-	font-size: 14px;
+	font-size: 15px;
+	color: black;
 }

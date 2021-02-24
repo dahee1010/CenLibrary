@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 <link rel="stylesheet" href="resources/css/hearderfooter.css">
 <link rel="stylesheet" href="resources/css/mainsearch.css">
 <link rel="stylesheet" href="resources/css/mainbox.css">
@@ -108,7 +108,7 @@
 						<c:forEach items="${list}" var="dto" varStatus="status" begin="0" end="4" step="1">
 							<td><c:choose>
 									<c:when test="${empty dto.bookimg}">
-										<a href="book/bookView.do?bookNum=${dto.bookNum}"><img src="/resources/img/booknull.jpg" width="180px" height="270px" /></a>
+										<a href="book/bookView.do?bookNum=${dto.bookNum}"><img src="resources/img/booknull.jpg" width="180px" height="270px" /></a>
 									</c:when>
 
 									<c:when test="${not empty dto.bookimg}">
@@ -133,7 +133,7 @@
 						<c:forEach items="${bookrank}" var="dto" varStatus="status" begin="0" end="4" step="1">
 							<td><c:choose>
 									<c:when test="${empty dto.bImg}">
-										<a href="book/bookView.do?bookNum=${dto.bNum}"><img src="/resources/img/booknull.jpg" width="180px" height="270px" /></a>
+										<a href="book/bookView.do?bookNum=${dto.bNum}"><img src="resources/img/booknull.jpg" width="180px" height="270px" /></a>
 									</c:when>
 
 									<c:when test="${not empty dto.bImg}">

@@ -45,48 +45,6 @@ input[type=text] {
 	font-size: 16px;
 }
 
-#deletebtn {
-	width: 115px;
-	height: 42px;
-	cursor: pointer;
-	border-radius: 35px;
-	background-color: #ffffff;
-	color: #646464;
-	border: 1px solid #b9b9b9;
-	outline: 0;
-	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
-	font-size: 16px;
-	position: absolute;
-	margin-top: 30px;
-	left: 59.6%;
-}
-
-#deletebtn:hover {
-	background-color: #848484;
-	color: #ffffff;
-}
-
-#modifybtn {
-	width: 115px;
-	height: 42px;
-	cursor: pointer;
-	border-radius: 35px;
-	background-color: #ffffff;
-	color: #646464;
-	border: 1px solid #b9b9b9;
-	outline: 0;
-	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
-	font-size: 16px;
-	position: absolute;
-	margin-top: 30px;
-	left: 65.8%;
-}
-
-#modifybtn:hover {
-	background-color: #848484;
-	color: #ffffff;
-}
-
 #cancelbtn {
 	width: 115px;
 	height: 42px;
@@ -100,7 +58,7 @@ input[type=text] {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 30px;
-	left: 72%;
+	left: 1250px;
 }
 
 #cancelbtn:hover {
@@ -121,31 +79,10 @@ input[type=text] {
 	font-size: 16px;
 	position: absolute;
 	margin-top: 30px;
-	left: 72%;
+	left: 1368px;
 }
 
 #writebtn:hover {
-	background-color: #848484;
-	color: #ffffff;
-}
-
-#cancelbtn2 {
-	width: 115px;
-	height: 42px;
-	cursor: pointer;
-	border-radius: 35px;
-	background-color: #ffffff;
-	color: #646464;
-	border: 1px solid #b9b9b9;
-	outline: 0;
-	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
-	font-size: 16px;
-	position: absolute;
-	margin-top: 30px;
-	left: 65.8%;
-}
-
-#cancelbtn2:hover {
 	background-color: #848484;
 	color: #ffffff;
 }

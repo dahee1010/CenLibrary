@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
-<link rel="stylesheet" href="/cenlibrary/resources/css/bookadminview.css">
+<link rel="stylesheet" href="/cenlibrary/resources/css/wishbookadd.css">
 <script language="JavaScript" src="check.js" charset="utf-8"></script>
 </head>
 <body>
@@ -65,7 +65,7 @@
 
 		</c:forEach>
 		<input type="submit" value="추가" id="writebtn">
-		<a href="wishbookList.do"><input type="button" value="취소" id="cancelbtn2"></a>
+		<a href="wishbookList.do"><input type="button" value="취소" id="cancelbtn"></a>
 
 	</form>
 	</div>

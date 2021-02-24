@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 </head>
 <body>
 <c:choose>

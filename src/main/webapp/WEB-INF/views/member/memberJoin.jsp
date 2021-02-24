@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/join.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/radio.css">
 <script language="JavaScript" src="/cenlibrary/resources/js/members.js" charset="utf-8"></script>

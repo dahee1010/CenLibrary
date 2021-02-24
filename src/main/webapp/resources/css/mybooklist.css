@@ -47,8 +47,9 @@ input[type=button]:hover {
 
 
 span {
-	top: 26.5%;
-	left: 66.5%;
+	width: 500px;
+	top: 245px;
+	left: 1267px;
 	position: absolute;
 	font-size: 15px;
 	color: black;

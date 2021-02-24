@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/bookadmin.css">
 <script language="javascript">

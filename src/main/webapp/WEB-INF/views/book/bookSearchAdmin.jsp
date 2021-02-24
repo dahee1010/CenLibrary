@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/adminlist.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/adminsearch.css">
@@ -53,7 +53,7 @@
 				</c:forEach>
 			</table>
 			
-			<a href="bookAddForm.jsp"><input type="button" value="도서추가" id="writebtn"></a>
+			<a href="bookAddForm"><input type="button" value="도서추가" id="writebtn"></a>
 
 			<table class="tab2">
 				<tr>

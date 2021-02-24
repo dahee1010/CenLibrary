@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/bookadmin.css">
 </head>
@@ -37,11 +36,7 @@
 				</tr>
 				<tr>
 					<th>생년월일</th>
-					<fmt:parseDate var="birthFormat" value="${view.birth}"
-						pattern="yyyy-MM-dd HH:mm:ss" />
-					<fmt:formatDate var="birthEx" value="${birthFormat}"
-						pattern="yyMMdd" />
-					<td><input type="text" name="birth" value="${birthEx}"
+					<td><input type="text" name="birth" value="${view.birth}"
 						required
 						pattern="[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[1,2][0-9]|3[0,1])"
 						title="형식: yymmdd"></td>

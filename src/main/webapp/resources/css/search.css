@@ -19,11 +19,11 @@ body {
 
 select {
 	position: absolute;
-	left: 28%;
+	left: 535px;
 	font: 13px KoPubWorldµ¸¿òÃ¼ Medium;
 	float: left;
-	width: 5%;
-	height: 4.2%;
+	width: 95px;
+	height: 40px;
 	padding-left: 20px;
 	border-radius:10px;
 }
@@ -34,10 +34,10 @@ select::-ms-expand {
 
 input[type=text] {
 	position: absolute;
-	left: 33.7%;
+	left: 642px;
 	float: left;
-	width: 33%;
-	height: 4%;
+	width: 628px;
+	height: 38px;
 	padding-left: 1em;
 	border: 1px solid #787A7C;
 	border-radius:10px;
@@ -46,11 +46,11 @@ input[type=text] {
 
 input[type=button] {
 	position: absolute;
-	left: 67.7%;
+	left: 1290px;
 	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
 	float: left;
-	width: 4%;
-	height: 4.2%;
+	width: 75px;
+	height: 39px;
 	border-radius:10px;
 	cursor: pointer;
 	background-color: #848484;
