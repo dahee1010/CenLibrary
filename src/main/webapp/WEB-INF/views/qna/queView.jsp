@@ -18,7 +18,7 @@
 	</div>
 
 	<main>
-	
+
 	<form action="queModify.do" method="post">
 		<input type="hidden" name="qNum" value="${view.qNum}">
 
@@ -42,58 +42,54 @@
 			<input type="submit" value="수정" id="modifybtn">
 			<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
 		</c:if>
-		
+
 		<c:if test="${id eq view.qId and not empty ans.aNum}">
 			<a href="queDelete.do?qNum=${view.qNum}"><input type="button" value="삭제" id="deletebtn1" /></a>
 			<input type="submit" value="수정" id="modifybtn1">
 		</c:if>
-		
-		<c:if test="${id eq 'admin' and empty ans.aNum}">
+
+		<c:if test="${id eq 'admin' and empty ans.aNum || id eq 'itcen1234' and empty ans.aNum}">
 			<a href="ansWrite.do?qNum=${view.qNum}"><input type="button" value="답변" id="replybtn" /></a>
 			<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
 		</c:if>
-		
-		<c:if test="${id ne 'admin' and empty ans.aNum}">
+
+		<c:if test="${id ne 'admin' and empty ans.aNum && id ne 'admin' and empty ans.aNum}">
 			<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
 		</c:if>
 
 	</form>
-	
-	
-	
-	
+
+
+
+
 	<c:if test="${not empty ans.aNum}">
-	
-	<form action="ansModify.do" method="post">
-		<input type="hidden" name="qNum" value="${view.qNum}">
 
-		<table style="margin-top: 100px">
-			<tr>
-				<th colspan=6 id="title">A. ${ans.qTitle}
-				<span>${fn:substring(ans.aDate, 0,16)}</span></th>
-			</tr>
-			<tr>
-				<td colspan=6 id="content">${ans.content}</td>
-			</tr>
-		</table>
+		<form action="ansModify.do" method="post">
+			<input type="hidden" name="qNum" value="${view.qNum}">
 
-		<c:if test="${id eq 'admin'}">
-			<a href="ansDelete.do?qNum=${view.qNum}"><input type="button" value="삭제" id="deletebtn" /></a>
-			<input type="submit" value="수정" id="modifybtn">
-			<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
-		</c:if>
-		
-		<c:if test="${id ne 'admin'}">
-			<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
-		</c:if>
+			<table style="margin-top: 100px">
+				<tr>
+					<th colspan=6 id="title">A. ${ans.qTitle} <span>${fn:substring(ans.aDate, 0,16)}</span></th>
+				</tr>
+				<tr>
+					<td colspan=6 id="content">${ans.content}</td>
+				</tr>
+			</table>
 
-	</form>
-	
-	</c:if>
-	
-	
-	
-	</main>
+			<c:choose>
+				<c:when test="${id eq 'admin' || id eq 'itcen1234'}">
+					<a href="ansDelete.do?qNum=${view.qNum}"><input type="button" value="삭제" id="deletebtn" /></a>
+					<input type="submit" value="수정" id="modifybtn">
+					<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
+				</c:when>
+
+				<c:otherwise>
+					<a href="queList.do"><input type="button" value="목록" id="cancelbtn" /></a>
+				</c:otherwise>
+			</c:choose>
+		</form>
+
+	</c:if> </main>
 
 	<jsp:include page="../footer.jsp" />
 

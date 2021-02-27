@@ -32,7 +32,9 @@
 
 	<jsp:include page="header.jsp" />
 
-	<main> <c:if test="${sessionScope.id eq null}">
+	<main>
+	
+	<c:if test="${sessionScope.id eq null}">
 		<jsp:forward page="member/memberLogin.jsp" />
 	</c:if>
 

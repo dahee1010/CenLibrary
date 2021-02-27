@@ -15,7 +15,7 @@
 			</script>
 		</c:when>
 		
-		<c:when test="${view.open eq 'false' and id eq 'admin'}">
+		<c:when test="${view.open eq 'false' and id eq 'admin' || view.open eq 'false' and id eq 'itcen1234'}">
 			<script>
 				location.href = 'queView.do?qNum=${view.qNum}';
 			</script>

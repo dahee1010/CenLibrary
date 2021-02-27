@@ -67,5 +67,4 @@ public class MemberDto {
 	public void setrDate(Timestamp rDate) {
 		this.rDate = rDate;
 	}
-
 }

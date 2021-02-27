@@ -41,7 +41,6 @@
 			<table class="tab1">
 				<tr>
 					<th>아이디</th>
-					<th>비밀번호</th>
 					<th>이름</th>
 					<th>생년월일</th>
 					<th>성별</th>
@@ -53,14 +52,13 @@
 				<c:forEach items="${list}" var="dto">
 					<tr>
 						<td>${dto.id}</td>
-						<td>${dto.pw}</td>
 						<td>${dto.name}</td>
 						<td>${fn:substring(dto.birth, 0,10)}</td>
 						<td>${dto.gender}</td>
 						<td>${dto.eMail}</td>
 						<td>${fn:substring(dto.rDate, 0,16)}</td>
 						<td><c:choose>
-								<c:when test="${dto.id eq 'admin'}">
+								<c:when test="${dto.id eq 'admin' || dto.id eq 'itcen1234'}">
 									<input type="button" value="탈퇴불가" onclick="btn_click();">
 								</c:when>
 

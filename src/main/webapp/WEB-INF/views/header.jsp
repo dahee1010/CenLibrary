@@ -9,6 +9,10 @@
 </head>
 <body>
 
+	<c:if test="${sessionScope.id eq null}">
+		<jsp:forward page="member/memberLogin.jsp" />
+	</c:if>
+
 	<header>
 		<div id="header1">
 
@@ -18,18 +22,18 @@
 
 			<div id="top_menu">
 				<!-- 첫번째 메뉴 -->
-				
-				<c:if test="${id eq 'admin'}">
-					<a href="/cenlibrary/member/memberList.do">관리자페이지</a>　|　
-				</c:if>
-				
-				<c:if test="${id ne 'admin'}">
-					<a>${id}님 안녕하세요.</a>　|　
-				</c:if>
 
-					<a href="/cenlibrary/member/memberView.do">내정보</a>　|　
-					<a href="/cenlibrary/mybook/mybookList.do">내서재</a>　|　
-					<a href="/cenlibrary/member/memberLogout">로그아웃</a>
+				<c:choose>
+					<c:when test="${id eq 'admin' || id eq 'itcen1234'}">
+						<a href="/cenlibrary/member/memberList.do">관리자페이지</a>　|　
+				</c:when>
+				
+				<c:otherwise>
+						<a>${id}님 안녕하세요.</a>　|　
+				</c:otherwise>
+				</c:choose>
+				
+				<a href="/cenlibrary/member/memberView.do">내정보</a>　| 　<a href="/cenlibrary/mybook/mybookList.do">내서재</a>　|　<a href="/cenlibrary/member/memberLogout">로그아웃</a>
 			</div>
 		</div>
 

@@ -37,10 +37,9 @@
 		</c:forEach>
 	</table>
 
-	<c:if test="${id eq 'admin'}">
+	<c:if test="${id eq 'admin' || id eq 'itcen1234'}">
 		<a href="boardWrite"><input type="button" value="±ÛÀÛ¼º"></a>
-	</c:if> <c:if test="${id ne 'admin'}"></c:if>
-
+	</c:if>
 
 	<table class="tab2">
 		<tr>

@@ -93,9 +93,6 @@ public class BookController {
 		return "book/bookSearchAdmin";
 	}
 
-	@Resource(name = "uploadPath")
-	String uploadPath;
-
 	@RequestMapping("/book/bookAddOk.do")
 	public String bookAddOk(HttpServletRequest request, Model model, MultipartHttpServletRequest mtfRequest) {
 		System.out.println("bookAddOk");

@@ -29,7 +29,7 @@
 
 			<tr>
 				<th>작성자</th>
-				<td>${view.wId}</td>
+				<td>관리자</td>
 				<th>등록일</th>
 				<td>${fn:substring(view.wDate, 0,16)}</td>
 			</tr>
@@ -38,13 +38,13 @@
 			</tr>
 		</table>
 
-		<c:if test="${id eq 'admin'}">
+		<c:if test="${id eq 'admin' || id eq 'itcen1234'}">
 			<a href="boardDelete.do?wNum=${view.wNum}"><input type="button" value="삭제" id="deletebtn" /></a>
 			<input type="submit" value="수정" id="modifybtn">
 			<a href="boardList.do"><input type="button" value="목록" id="cancelbtn" /></a>
 		</c:if>
 
-		<c:if test="${id ne 'admin'}">
+		<c:if test="${id ne 'admin' && id ne 'itcen1234'}">
 			<a href="boardList.do"><input type="button" value="목록" id="cancelbtn" /></a>
 		</c:if>
 
