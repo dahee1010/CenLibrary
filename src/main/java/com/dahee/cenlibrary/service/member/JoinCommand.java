@@ -37,7 +37,6 @@ public class JoinCommand implements Service {
 		dto.setGender(gender);
 		dto.seteMail(eMail);
 		dto.setrDate(new Timestamp(System.currentTimeMillis()));
-		dto.setState("user");
 
 		int confirmId = dao.confirmId(id);
 		int ri = dao.insertMember(dto);
