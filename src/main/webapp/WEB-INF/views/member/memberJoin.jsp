@@ -6,7 +6,7 @@
 <title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/join.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/radio.css">
-<script language="JavaScript" src="/cenlibrary/resources/js/members.js" charset="utf-8"></script>
+<script language="JavaScript" src="/cenlibrary/resources/js/members.js" charset="euc-kr"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(function() {

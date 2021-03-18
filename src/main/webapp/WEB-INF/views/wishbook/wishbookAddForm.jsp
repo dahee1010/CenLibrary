@@ -8,6 +8,20 @@
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/wishbookadd.css">
 <script language="JavaScript" src="check.js" charset="utf-8"></script>
+<script type="text/javascript">
+function fileCheck(obj) {
+    pathpoint = obj.value.lastIndexOf('.');
+    filepoint = obj.value.substring(pathpoint+1,obj.length);
+    filetype = filepoint.toLowerCase();
+    
+    if(filetype=='jpg' || filetype=='gif' || filetype=='png' || filetype=='jpeg' || filetype=='bmp') {
+    } else {
+        alert('이미지 파일만 선택 가능합니다.');
+        obj.value = '';
+        return false;
+    }
+}
+</script>
 </head>
 <body>
 
@@ -59,7 +73,7 @@
 				</tr>
 				<tr>
 					<th>도서사진</th>
-					<td><input type="file" name="file" size=40></td>
+					<td><input type="file" name="file" size=40 accept="image/*" onchange="fileCheck(this)"></td>
 				</tr>
 			</table>
 

@@ -7,6 +7,20 @@
 <title>센도서관</title>
 <link rel="stylesheet" href="/cenlibrary/resources/css/detailmenu.css">
 <link rel="stylesheet" href="/cenlibrary/resources/css/bookadmin.css">
+<script type="text/javascript">
+function fileCheck(obj) {
+    pathpoint = obj.value.lastIndexOf('.');
+    filepoint = obj.value.substring(pathpoint+1,obj.length);
+    filetype = filepoint.toLowerCase();
+    
+    if(filetype=='jpg' || filetype=='gif' || filetype=='png' || filetype=='jpeg' || filetype=='bmp') {
+    } else {
+        alert('이미지 파일만 선택 가능합니다.');
+        obj.value = '';
+        return false;
+    }
+}
+</script>
 </head>
 <body>
 
@@ -52,7 +66,7 @@
 				</tr>
 				<tr>
 					<th>도서사진</th>
-					<td><input type="file" name="bookimg2" size="40"><br>
+					<td><input type="file" name="bookimg2" size="40" accept="image/*" onchange="fileCheck(this)"><br>
 					<c:choose>
 							<c:when test="${empty view.bookimg}">
 								null
